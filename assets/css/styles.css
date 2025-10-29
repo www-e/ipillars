@@ -126,10 +126,22 @@ a:focus {
 /* Loader Styles */
 #loader {
     transition: opacity 0.5s ease-out;
+    background: transparent; /* Make loader transparent to show content through opening */
 }
 
 #left-pillar, #right-pillar {
     transition: transform 1.2s cubic-bezier(0.86, 0, 0.07, 1);
+    background: #F5F1E8; /* Pillars maintain their background */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Add subtle shadow for depth */
+}
+
+/* Door opening animation - pillars move but create visible opening */
+.door-opening {
+    transform: translateX(-50%) translateX(-30vw); /* Left pillar moves left but stays partially visible */
+}
+
+.door-opening-right {
+    transform: translateX(50%) translateX(30vw); /* Right pillar moves right but stays partially visible */
 }
 
 .loader-hidden {
@@ -137,11 +149,7 @@ a:focus {
     pointer-events: none;
 }
 
-.content-hidden {
-    opacity: 0;
-}
-
 .content-visible {
     opacity: 1;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 0.3s ease-in; /* Faster fade in since content is already visible */
 }
