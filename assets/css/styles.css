@@ -157,7 +157,6 @@ a:focus {
 #left-pillar > *, #right-pillar > * {
     position: relative;
     z-index: 2;
-    transform: scaleY(2); /* Make pillar icons only taller, not wider */
 }
 
 /* Door opening animation - pillars move but create visible opening */
