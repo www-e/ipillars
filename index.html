@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="iPillarsi - Premium Real Estate Coming Soon">
-    <meta name="keywords" content="real estate, luxury property, premium homes, iPillarsi">
-    <title>iPillarsi - Coming Soon | Premium Real Estate</title>
+    <meta name="description" content="IPillarsI - Premium Real Estate Coming Soon">
+    <meta name="keywords" content="real estate, luxury property, premium homes, IPillarsI">
+    <title>IPillarsI - Coming Soon | Premium Real Estate</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,6 +36,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-montserrat antialiased bg-cream">
+
+    <!-- Loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-cream flex items-center justify-center z-50">
+        <div id="left-pillar" class="absolute left-0 w-1/2 h-full bg-cream flex justify-end items-center pr-4">
+            <i class="fa-solid fa-building-columns text-cafe text-6xl"></i>
+        </div>
+        <div id="right-pillar" class="absolute right-0 w-1/2 h-full bg-cream flex justify-start items-center pl-4">
+            <i class="fa-solid fa-building-columns text-cafe text-6xl"></i>
+        </div>
+    </div>
+
     
     <!-- Main Hero Section -->
     <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -48,11 +59,15 @@
         <!-- Content Container -->
         <div class="container mx-auto px-6 py-20 max-w-7xl relative z-10">
             
-            <!-- Navigation Bar (Optional) -->
+            <!-- Navigation Bar -->
             <nav class="absolute top-8 left-0 right-0 px-6 md:px-12">
                 <div class="flex justify-between items-center">
-                    <div class="text-charcoal font-cormorant text-2xl font-semibold tracking-wide">
-                        iPillarsi
+                    <div class="flex items-center">
+                        <img src="./assets/images/ipilogo.png" alt="IPI Invest Pillars International Logo" class="h-14 w-auto md:h-16">
+                        <div class="ml-3 text-charcoal font-cormorant text-xl md:text-2xl font-semibold tracking-wide">
+                            <span class="block">IPI Invest</span>
+                            <span class="block text-sm md:text-base font-light text-cafe">Pillars International</span>
+                        </div>
                     </div>
                     <div class="hidden md:flex gap-8 text-sm tracking-wider text-cafe">
                         <a href="#contact" class="hover:text-charcoal transition-colors">CONTACT</a>
@@ -73,10 +88,16 @@
                 <!-- Main Heading -->
                 <div class="space-y-6">
                     <h1 class="font-cormorant text-5xl md:text-7xl lg:text-8xl font-light text-charcoal leading-tight tracking-tight">
-                        iPillarsi
+                        IPillarsI
                     </h1>
                     
                     <div class="w-24 h-px bg-cafe/40 mx-auto"></div>
+
+                    <div class="mt-4">
+                        <p class="inline-block px-6 py-3 bg-charcoal text-cream text-sm tracking-widest uppercase font-bold">
+                            Amany Fekry Founder & CEO
+                        </p>
+                    </div>
                     
                     <h2 class="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-cafe leading-relaxed max-w-4xl mx-auto">
                         Elevated Living,<br class="md:hidden"> Exceptional Properties
@@ -127,6 +148,24 @@
             
             <!-- Contact Section -->
             <div id="contact" class="mt-32 pt-12 border-t border-cafe/20">
+                
+                <!-- Company Logo Section -->
+                <div class="mb-16 text-center">
+                    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+                        <img src="./assets/images/ipilogo.png" alt="IPillarsI Logo" class="h-26 w-auto mx-auto mb-6">
+                        <h3 class="font-cormorant text-2xl md:text-3xl font-medium text-charcoal mb-2">IPillarsI</h3>
+                        <p class="text-cafe/80 text-sm leading-relaxed font-light">
+                            Premium Real Estate Excellence<br>
+                            Building Foundations for Your Future
+                        </p>
+                        <div class="mt-6 pt-6 border-t border-cafe/20">
+                            <p class="text-xs tracking-wider text-cafe/70 uppercase">Founded by</p>
+                            <p class="font-montserrat text-sm tracking-widest uppercase text-charcoal font-medium mt-1">Amany Fekry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto text-center md:text-left">
                     
                     <!-- Left Column -->
@@ -134,10 +173,10 @@
                         <h3 class="font-montserrat text-xs tracking-[0.3em] uppercase text-cafe/70">Get In Touch</h3>
                         
                         <div class="space-y-4">
-                            <a href="" class="block text-charcoal hover:text-cafe transition-colors group">
+                            <a href="mailto:info@IPillarsI.com" class="block text-charcoal hover:text-cafe transition-colors group">
                                 <div class="flex items-center justify-center md:justify-start gap-3">
                                     <i class="far fa-envelope text-cafe"></i>
-                                    <span class="font-light">info@ipillarsi.com</span>
+                                    <span class="font-light">info@IPillarsI.com</span>
                                 </div>
                             </a>
                             
@@ -177,7 +216,7 @@
                 <!-- Footer -->
                 <div class="mt-16 text-center">
                     <p class="text-cafe/50 text-xs tracking-wider font-light">
-                        © 2025 iPillarsi.com — All Rights Reserved
+                        © 2025 IPI Invest Pillars International — All Rights Reserved
                     </p>
                     <div class="mt-4">
                         <a href="https://omar-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-charcoal text-cream text-xs tracking-widest uppercase hover:bg-cafe transition-all duration-500 font-medium">
