@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iPillarsi - Premium Real Estate Coming Soon">
+    <meta name="keywords" content="real estate, luxury property, premium homes, iPillarsi">
+    <title>iPillarsi - Coming Soon | Premium Real Estate</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F5F1E8',
+                        cafe: '#6B5D52',
+                        sand: '#D4C4B0',
+                        charcoal: '#2C2C2C',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-montserrat antialiased bg-cream">
+    
+    <!-- Main Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        
+        <!-- Subtle Background Texture -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="texture-pattern"></div>
+        </div>
+        
+        <!-- Content Container -->
+        <div class="container mx-auto px-6 py-20 max-w-7xl relative z-10">
+            
+            <!-- Navigation Bar (Optional) -->
+            <nav class="absolute top-8 left-0 right-0 px-6 md:px-12">
+                <div class="flex justify-between items-center">
+                    <div class="text-charcoal font-cormorant text-2xl font-semibold tracking-wide">
+                        iPillarsi
+                    </div>
+                    <div class="hidden md:flex gap-8 text-sm tracking-wider text-cafe">
+                        <a href="mailto:info@ipillarsi.com" class="hover:text-charcoal transition-colors">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Hero Content -->
+            <div class="text-center mt-20 space-y-10">
+                
+                <!-- Coming Soon Label -->
+                <div class="inline-block">
+                    <div class="px-8 py-2 border border-cafe/30 text-cafe text-xs tracking-[0.3em] uppercase">
+                        Coming Soon
+                    </div>
+                </div>
+                
+                <!-- Main Heading -->
+                <div class="space-y-6">
+                    <h1 class="font-cormorant text-5xl md:text-7xl lg:text-8xl font-light text-charcoal leading-tight tracking-tight">
+                        iPillarsi
+                    </h1>
+                    
+                    <div class="w-24 h-px bg-cafe/40 mx-auto"></div>
+                    
+                    <h2 class="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-cafe leading-relaxed max-w-4xl mx-auto">
+                        Elevated Living,<br class="md:hidden"> Exceptional Properties
+                    </h2>
+                </div>
+                
+                <!-- Description -->
+                <p class="text-cafe/80 text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-light tracking-wide">
+                    We are curating an exclusive portfolio of distinguished properties<br class="hidden md:block"> 
+                    for those who seek refined elegance and timeless design.
+                </p>
+                
+                <!-- Features Grid -->
+                <div class="pt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 mx-auto border border-cafe/20 flex items-center justify-center">
+                            <i class="fas fa-building text-cafe text-lg"></i>
+                        </div>
+                        <h3 class="font-montserrat text-sm tracking-widest uppercase text-charcoal">Premium Portfolio</h3>
+                        <p class="text-cafe/70 text-sm leading-relaxed font-light">Carefully selected properties of distinction</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 mx-auto border border-cafe/20 flex items-center justify-center">
+                            <i class="fas fa-award text-cafe text-lg"></i>
+                        </div>
+                        <h3 class="font-montserrat text-sm tracking-widest uppercase text-charcoal">Expert Service</h3>
+                        <p class="text-cafe/70 text-sm leading-relaxed font-light">Personalized guidance throughout your journey</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 mx-auto border border-cafe/20 flex items-center justify-center">
+                            <i class="fas fa-key text-cafe text-lg"></i>
+                        </div>
+                        <h3 class="font-montserrat text-sm tracking-widest uppercase text-charcoal">Exclusive Access</h3>
+                        <p class="text-cafe/70 text-sm leading-relaxed font-light">First to know about new opportunities</p>
+                    </div>
+                </div>
+                
+                <!-- CTA -->
+                <div class="pt-8">
+                    <button id="notify-btn" class="px-12 py-4 bg-charcoal text-cream text-sm tracking-widest uppercase hover:bg-cafe transition-all duration-500 font-medium">
+                        Contact Us
+                    </button>
+                </div>
+                
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="mt-32 pt-12 border-t border-cafe/20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto text-center md:text-left">
+                    
+                    <!-- Left Column -->
+                    <div class="space-y-6">
+                        <h3 class="font-montserrat text-xs tracking-[0.3em] uppercase text-cafe/70">Get In Touch</h3>
+                        
+                        <div class="space-y-4">
+                            <a href="mailto:info@ipillarsi.com" class="block text-charcoal hover:text-cafe transition-colors group">
+                                <div class="flex items-center justify-center md:justify-start gap-3">
+                                    <i class="far fa-envelope text-cafe"></i>
+                                    <span class="font-light">info@ipillarsi.com</span>
+                                </div>
+                            </a>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-center md:justify-start gap-3">
+                                    <i class="fas fa-phone text-cafe"></i>
+                                    <div class="text-left">
+                                        <a href="tel:01004616391" class="block text-charcoal hover:text-cafe transition-colors font-light">010 04616391</a>
+                                        <a href="tel:01003170567" class="block text-charcoal hover:text-cafe transition-colors font-light">010 03170567</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column -->
+                    <div class="space-y-6">
+                        <h3 class="font-montserrat text-xs tracking-[0.3em] uppercase text-cafe/70">Follow Us</h3>
+                        
+                        <div class="flex justify-center md:justify-start gap-4">
+                            <a href="https://www.facebook.com/share/17NfXcFuWk/" target="_blank" class="w-10 h-10 border border-cafe/20 flex items-center justify-center text-cafe hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300">
+                                <i class="fab fa-facebook-f text-sm"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/17NfXcFuWk/" target="_blank" class="w-10 h-10 border border-cafe/20 flex items-center justify-center text-cafe hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300">
+                                <i class="fab fa-instagram text-sm"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/17NfXcFuWk/" target="_blank" class="w-10 h-10 border border-cafe/20 flex items-center justify-center text-cafe hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300">
+                                <i class="fab fa-linkedin-in text-sm"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/17NfXcFuWk/" target="_blank" class="w-10 h-10 border border-cafe/20 flex items-center justify-center text-cafe hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300">
+                                <i class="fab fa-whatsapp text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="mt-16 text-center">
+                    <p class="text-cafe/50 text-xs tracking-wider font-light">
+                        © 2025 iPillarsi.com — All Rights Reserved
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://omar-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-charcoal text-cream text-xs tracking-widest uppercase hover:bg-cafe transition-all duration-500 font-medium">
+                            Developed by Omar A.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/popup.js"></script>
+</body>
+</html>
